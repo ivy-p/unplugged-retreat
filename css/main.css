@@ -87,6 +87,112 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*------------HEADER AND FOOTER STYLES--------------*/
+header, 
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  /*background-color: #202322;*/
+}
+
+header .content-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header nav{
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .social-icons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .social-icons p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ----------HOME PAGE MOBILE STYLES----------*/
+
+/* Hero Area */
+.hero-area{
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* Aside */
+aside{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* Features */
+.features{
+  display: flex;
+}
+
+.features .features-items{
+  flex-flow: row wrap;
+}
+
+/* Reviews */
+.reviews{
+  flex-flow: row wrap;
+  display: flex;
+}
+
+
+/*----------ABOUT PAGE MOBILE STYLES-----------*/
+.mission{
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-section{
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------------FAQ PAGE MOBILE STYLES----------*/
+.faq{
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq .content-wrapper{
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
