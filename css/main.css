@@ -13,7 +13,7 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
   max-width: 1200px;
 }
@@ -87,216 +87,496 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   *{
+    margin: 0;
+    padding: 0;
+  }
 
-body{
-  max-width: 1200px;
-  width: 100%;
-}
+   /*-------------------MOBILE HOME PAGE STYLES----------------*/
 
-.content-wrapper{
-  width: 90%;
-  margin: 50px 0;
-}
+  /*  HEADER STYLES */
+  .header-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background: #202322;
+  }
 
-/*------------HEADER AND FOOTER STYLES--------------*/
-header, 
-footer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
+  .header-container img{
+    width: 60%;
+    margin: 25px 0;
+  }
 
-header{
-  padding: 15px 0;
-}
+  .header-divider{
+    width: 100%;
+    border-top: #3a3a3a solid 1px;
+  }
 
-header .content-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  width: 100%;
-  margin: 0;
-}
+  header nav{
+    margin: 20px 0;
+  }
 
-/*header .content-wrapper a img{
-  width: 60%;
-  padding: 0;
-  margin: 20px 0;
-  text-align: center;
-}*/
+  header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    width: 100%;
+  }
 
-.header-divider{
-  width: 100%;
-  height: 1px;
-  margin: 10px 0 20px 0;
-}
+  header nav ul li a{
+    text-decoration: none;
+    color: #e2e3ed;
+    justify-content: space-between;
+    margin:60px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.125rem;
+    text-transform: uppercase;
 
-header nav{
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 60%;
-}
+  }
 
-header nav ul{
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-}
+  /*HERO IMAGE SECTION*/
+  .hero-container{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    background-image: url('../img/jake-melara-30679-unsplash.jpg');
+    background-position:top;
+    background-size: cover;
+    height: 500px;
+  }
 
-footer{
-  flex-direction: column;
-}
+  .hero-container h1{
+    margin-left: 22px;
+    width: 82%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25rem;
+    color: #e2e3ed;
+    font-weight: 500;
+  }
 
-footer .content-wrapper{
-  width: 55%;
-  margin: 50px 0;
-}
+  /*MORE INFO SECTION*/
+  .more-info-container{
+    display: flex;
+    justify-content:flex-start;
+    flex-flow: column nowrap;
+    background: #527158;
+    height: 330px;
+  }
 
-footer .contact {
-  margin-bottom: 50px;
-}
+  .more-info-container h3{
+    width: 74%;
+    margin: 30px 0 13px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #e2e3ed;
+  }
 
-footer .social-icons{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
+  .more-info-container p{
+    margin-left: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #e2e3ed;
+  }
 
-footer .social-icons p{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .email-form{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
 
-footer p{
-  margin: 0;
-}
+  .email-form input{
+    width: 89%;
+    margin: 0 0 17px 20px;
+    height: 50px;
+    box-sizing: border-box;
+  }
 
-footer .copyright{
-  margin: 20px 0;
-}
+  .email{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 0.875rem;
+    color: #9d9ea4;
+    border: none;
+    padding-left: 15px;
+  }
 
+  .download{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #9d9ea4;
+    background: #2a423a;
+    border: none;
+  }
 
-/* ----------HOME PAGE MOBILE STYLES----------*/
+  /*FUN CAMP FEATURES*/
+  .amenities-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-image: url('../img/rawpixel-800820-unsplash.png');
+    background-position: center;
+    background-size: cover;
+  }
 
-/* Hero Area */
-.hero-area{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
+  .amenities-container h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+    color: #e2e3ed;
+    margin: 50px 37px 60px 20px;
+  }
 
-.hero-area .content-wrapper{
-  display: flex;
-  justify-content: center;
-  height: 500px;
-  background-image: url("../img/jake-melara-30679-unsplash.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-}
+  .camp-features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+  }
 
-.hero-area .content-wrapper h1{
-  margin: 55px 22px;
-  width: 81%;
-}
+  .fun-feature{
+    color: #e2e3ed;
+    text-align: center;
+    margin: 66px 97px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+  }
 
+  .fun-details{
+    margin-top: 40px;
+  }
 
-/* Aside */
-aside{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
+  /*PAST VISITORS*/
+  .reviews-container{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-flow: column wrap;
+    background: #2a423a;
+  }
 
-/* Features */
-.features{
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
+  .reviews-container h2{
+    margin-top: 55px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+    width: 89%;
+    color: #e2e3ed;
+  }
 
-.features h2{
-  margin-bottom: 60px;
-}
+  .reviews-container img{
+    width: 89%;
+    margin: 32px 20px;
+  }
 
-.features p{
-  margin: 0;
-}
+  .past-team{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
 
-.features .features-items{
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .past-team h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: #e2e3ed;
+    margin: 0 0 28px 20px;
+    width: 89%;
+  }
 
-.features article{
-  width: 63%;
-  margin: 30px 0;
-}
+  .past-team p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #e2e3ed;
+    width: 89%;
+    margin: 0 20px 50px 20px;
+  }
 
-/* Reviews */
-.reviews{
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-}
+  /*FOOTER STYLES*/
+  .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    background: #202322;
+  }
 
-.reviews h2{
-  margin-bottom: 40px;
-}
+  .contact h3,
+  .social h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 50px;
+  }
 
-.reviews h3{
-  width: 55%;
-  margin: 20px 0;
-}
+  .contact address{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0 0px 0;
+  }
 
+    .social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+    }
 
-/*----------ABOUT PAGE MOBILE STYLES-----------*/
-.mission{
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .social h3{
+      margin-bottom: 21px;
+    }
 
-.contact-section{
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .social-icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      margin-bottom: 50px;
+    }
 
-/*-------------FAQ PAGE MOBILE STYLES----------*/
-.faq{
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+    .social-icons a{
+      margin: 0 20px;
+    }
 
-.faq .content-wrapper{
-  flex-flow: row wrap;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0 0 0;
-}
+    footer p{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 0.875rem;
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
 
-.faq h2{
-  margin-bottom: 40px;
-}
+    /*--------------TABLET HOME PAGE STYLES----------------*/
+    @media only screen and (min-width: 768px){
 
-.faq-content{
-  margin-bottom: 50px;
-}
+      /*HOMEPAGE HEADER TABLET STYLES*/
+      .header-container{
+        flex-direction: row;
+        justify-content: space-between;
+      }
 
+      .header-container img{
+        width: 31%;
+        margin-left: 64px;
+      }
+
+      .header-divider{
+        display: none;
+      }
+
+      header nav ul{
+        margin-right: 64px;
+      }
+
+      header nav ul li a{
+        padding-right: 40px;
+        margin: 0;
+      }
+
+    /*HOMEPAGE HERO TABLET STYLES*/
+    .hero-container{
+      height: 600px;
+    }
+    .hero-container h1{
+      margin-left: 62px;
+      margin-top: 97px;
+      font-size: 3rem;
+    }
+
+    /*HOMEPAGE MORE INFO TABLET STYLES*/
+
+    .more-info-container{
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items:center;
+      height: 236px;
+    }
+
+    .join-next-retreat{
+      width: 33%;
+      text-align: left;
+    }
+
+    .join-next-retreat h3{
+      margin-top:0;
+      margin-bottom: 23px;
+    }
+
+    .join-next-retreat p{
+      font-size: 1rem;
+    }
+
+    .email-form{
+      width: 38%;
+      text-align: left;
+    }
+
+    .email-form .email{
+      margin-bottom: 20px;
+      padding-left: 15px;
+    }
+
+  /*HOME PAGE CAMP FEATURES TABLET STYLES*/
+    
+    .amenities-container h2{
+      font-size: 2.25rem;
+      text-align: center;
+      margin-bottom: 34px;
+      margin-top: 94px;
+    }
+
+    .camp-features{
+      flex-flow: row wrap;
+      justify-content: space-around;
+    }
+
+    .fun-feature{
+      width: 21%;
+      margin: 42px 97px;
+    }
+
+    .fun-details{
+      margin-top: 30px;
+    }
+    
+    /*PAST REVIEWS HOMEPAGE TABLET STYLES*/
+
+    .reviews-container{
+      flex-flow: row wrap;
+      align-items: flex-start;
+    }
+
+    .reviews-container h2{
+      width: 65%;
+      margin: 100px 0 22px 63px;
+      font-size: 2.25rem;
+    }
+    
+    .reviews-container img{
+      margin: 0 0 0 63px;
+    }
+
+    .reviews-container img,
+    .past-team{
+      width: 41%;
+      margin-bottom: 100px;
+    }
+
+    .past-team{
+      margin-left: 17px;
+    }
+
+    .past-team h3,
+    .past-team p{
+      margin-left: 0;
+    }
+
+    .past-team h3{
+      font-size: 1.5rem;
+      margin-bottom: 17px;
+      margin-top: 0;
+    }
+
+    /*FOOTER TABLET STYLES*/
+
+    .footer-container{
+      flex-flow: row wrap;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    footer p{
+      width: 100%;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contact,
+    .social{
+      width: 31%;
+      margin-top: 100px;
+    }
+
+    .contact h3,
+    .social h3{
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+  }  
+
+    /*--------------DESKTOP HOME PAGE STYLES---------------*/
+
+    @media only screen and (min-width: 1200px){
+    /*HOME PAGE CAMP FEATURES DESKTOP STYLES*/
+    .amenities-container h2{
+      width: 73%;
+      text-align: left;
+    }
+
+    .camp-features{
+      margin: 0 120px 90px 120px;
+    }
+
+    .fun-feature{
+        width: 15%;
+        margin: 50px 80px;
+      }
+
+    /*PAST REVIEWS HOMEPAGE DESKTOP STYLES*/
+
+      .reviews-container h2{
+        width: 80%;
+        margin: 95px 0 95px 120px;
+      }
+
+      .reviews-container img{
+        margin: 0 0 95px 120px;
+        width: 38%;
+      }
+
+      .past-team{
+        margin-left: 35px;
+        width: 38%;
+      }
+    /* 
+    
+    .reviews-container img{
+      margin: 0 0 0 63px;
+    }
+
+    .reviews-container img,
+    .past-team{
+      width: 41%;
+      margin-bottom: 100px;
+    }
+
+    .past-team{
+      margin-left: 17px;
+    }
+
+    .past-team h3,
+    .past-team p{
+      margin-left: 0;
+    }
+
+    .past-team h3{
+      font-size: 1.5rem;
+      margin-bottom: 17px;
+      margin-top: 0;
+    }*/
+    }
 
 
 
@@ -388,15 +668,14 @@ aside{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+/*  TABLET STYLES */
+@media only screen and (min-width: 768px){
+
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+/*  DESKTOP STYLES*/
+@media only screen and (min-width: 1200px){
+
 }
 
 /* ==========================================================================
