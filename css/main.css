@@ -103,7 +103,8 @@ textarea {
     background: #202322;
   }
 
-  .header-container img{
+  .header-container img,
+  .unplugged-logo a img{
     width: 60%;
     margin: 25px 0;
   }
@@ -358,6 +359,53 @@ textarea {
       margin-bottom: 20px;
     }
 
+    /*-----------FAQ PAGE MOBILE STYLES-----------------*/
+
+     /*FAQ & ABOUT PAGE HEADER SETTINGS*/
+  .unplugged-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*FAQ SECTION STYLES*/
+  .faq-content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    background: #527158;
+  }
+
+  .faq-content-container h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+    color: #e2e3ed;
+    margin: 50px 80px 50px 20px;
+  }
+
+  .faq-content{
+    margin: 0 20px 50px 20px;
+  }
+
+  .faq-content h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+    color: #e2e3ed;
+  }
+
+  .faq-content p{
+    font-family: 'Open Sans', sans-serif;
+    color: #e2e3ed;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+  }
+
     /*--------------TABLET HOME PAGE STYLES----------------*/
     @media only screen and (min-width: 768px){
 
@@ -365,6 +413,12 @@ textarea {
       .header-container{
         flex-direction: row;
         justify-content: space-between;
+      }
+
+      /*ABOUT & FAQ PAGE HEADER TABLET STYLES*/
+
+      .unplugged-logo{
+        justify-content: flex-start;
       }
 
       .header-container img{
@@ -514,11 +568,39 @@ textarea {
       margin-top: 0;
       font-size: 1.5rem;
     }
+
+    /*----------TABLET FAQ PAGE STYLES-------------*/
+
+    .faq-content-container{
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      padding-bottom: 65px;
+   }
+
+   .faq-content-container h2{
+    font-size: 2.25rem;
+    text-align: left;
+    margin: 95px 200px 35px 60px;
+  }
+
+    .faq-content{
+      width: 39%;
+      margin: 0 0 0 60px;
+    }
+
+    .faq-content h4{
+      font-size: 0.875rem;
+    }
+
+    .faq-content p{
+      margin-bottom: 35px;
+    }
   }  
 
     /*--------------DESKTOP HOME PAGE STYLES---------------*/
 
     @media only screen and (min-width: 1200px){
+
     /*HOME PAGE CAMP FEATURES DESKTOP STYLES*/
     .amenities-container h2{
       width: 73%;
@@ -550,33 +632,24 @@ textarea {
         margin-left: 35px;
         width: 38%;
       }
-    /* 
-    
-    .reviews-container img{
-      margin: 0 0 0 63px;
+
+    /*----------FAQ PAGE DESKTOP STYLES----------*/
+    .faq-content-container h2{
+      font-size: 3rem;
+      margin-bottom: 40px;
     }
 
-    .reviews-container img,
-    .past-team{
-      width: 41%;
-      margin-bottom: 100px;
+    .faq-content h4{
+      font-size: 1.125rem;
     }
 
-    .past-team{
-      margin-left: 17px;
+    .faq-content p{
+      font-size: 1.125rem;
+      line-height: 1.125rem;
+    }
     }
 
-    .past-team h3,
-    .past-team p{
-      margin-left: 0;
-    }
 
-    .past-team h3{
-      font-size: 1.5rem;
-      margin-bottom: 17px;
-      margin-top: 0;
-    }*/
-    }
 
 
 
