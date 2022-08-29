@@ -87,9 +87,50 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /*-----------GENERAL STYLES--------------*/
+   
    *{
     margin: 0;
     padding: 0;
+  }
+
+  html{
+    font-size: 16px;
+  }
+
+  body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+  }
+
+  ul,
+  ol{
+
+  }
+
+  a{
+    color: #e2e3ed;
+    text-decoration: none;
+  }
+
+  h1{
+    font-size: 2.25rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875rem;
+  }
+
+  h3,
+  h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+  }
+
+  p{
+    font-size: 0.875rem;
   }
 
    /*-------------------MOBILE HOME PAGE STYLES----------------*/
@@ -128,8 +169,6 @@ textarea {
   }
 
   header nav ul li a{
-    text-decoration: none;
-    color: #e2e3ed;
     justify-content: space-between;
     margin:60px;
     font-family: 'Open Sans', sans-serif;
@@ -153,8 +192,6 @@ textarea {
   .hero-container h1{
     margin-left: 22px;
     width: 82%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.25rem;
     color: #e2e3ed;
     font-weight: 500;
   }
@@ -171,16 +208,12 @@ textarea {
   .more-info-container h3{
     width: 74%;
     margin: 30px 0 13px 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.125rem;
     font-weight: 500;
     color: #e2e3ed;
   }
 
   .more-info-container p{
     margin-left: 20px;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.875rem;
     color: #e2e3ed;
   }
 
@@ -228,8 +261,6 @@ textarea {
   }
 
   .amenities-container h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.875rem;
     font-weight: 500;
     color: #e2e3ed;
     margin: 50px 37px 60px 20px;
@@ -266,8 +297,6 @@ textarea {
   .reviews-container h2{
     margin-top: 55px;
     margin-left: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.875rem;
     font-weight: 500;
     width: 89%;
     color: #e2e3ed;
@@ -286,17 +315,13 @@ textarea {
   }
 
   .past-team h3{
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1.125rem;
     color: #e2e3ed;
     margin: 0 0 28px 20px;
     width: 89%;
   }
 
   .past-team p{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.875rem;
     color: #e2e3ed;
     width: 89%;
     margin: 0 20px 50px 20px;
@@ -314,8 +339,6 @@ textarea {
   .contact h3,
   .social h3{
     text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.125rem;
     color: #ffffff;
     font-weight: 500;
     margin-top: 50px;
@@ -353,8 +376,6 @@ textarea {
     }
 
     footer p{
-      font-family: 'Open Sans', sans-serif;
-      font-size: 0.875rem;
       color: #ffffff;
       margin-bottom: 20px;
     }
@@ -378,8 +399,6 @@ textarea {
   }
 
   .faq-content-container h2{
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.875rem;
     font-weight: 500;
     line-height: 1.875rem;
     color: #e2e3ed;
@@ -391,18 +410,14 @@ textarea {
   }
 
   .faq-content h4{
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 1.125rem;
     line-height: 1.5rem;
     margin-bottom: 15px;
     color: #e2e3ed;
   }
 
   .faq-content p{
-    font-family: 'Open Sans', sans-serif;
     color: #e2e3ed;
-    font-size: 0.875rem;
     line-height: 1.125rem;
   }
 
@@ -418,8 +433,6 @@ textarea {
       }
 
       .mission-content-wrapper h2{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.875rem;
         font-weight: 500;
         color: #e2e3ed;
         margin-bottom: 20px;
@@ -427,8 +440,6 @@ textarea {
       }
 
       .mission-content-wrapper p{
-        font-family: 'Open Sans', sans-serif;
-        font-size: 0.875rem;
         line-height: 1.125rem;
         color: #e2e3ed;
       }
@@ -448,8 +459,6 @@ textarea {
       }
 
       .contact-wrapper h2{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.875rem;
         line-height: 1.875rem;
         color: #e2e3ed;
         font-weight: 500;
@@ -461,8 +470,6 @@ textarea {
       }
 
       .contact-content h3{
-        font-family: 'Poppins', sans-serif;
-        font-size: 1.125rem;
         line-height: 1.125rem;
         color: #ffffff;
         font-weight: 500;
@@ -482,6 +489,27 @@ textarea {
 
     /*--------------TABLET HOME PAGE STYLES----------------*/
     @media only screen and (min-width: 768px){
+
+      /*GENERAL STYLES*/
+      h1{
+        font-size: 3rem;
+      }
+
+      h2{
+        font-size: 2.25rem;
+      }
+
+      h3{
+        font-size: 1.5rem;
+      }
+
+      h4{
+        font-size: 0.875rem;
+      }
+
+      p{
+        font-size: 1rem;
+      }
 
       /*HOMEPAGE HEADER TABLET STYLES*/
       .header-container{
@@ -520,8 +548,7 @@ textarea {
     .hero-container h1{
       margin-left: 62px;
       margin-top: 97px;
-      font-size: 3rem;
-    }
+   }
 
     /*HOMEPAGE MORE INFO TABLET STYLES*/
 
@@ -542,10 +569,6 @@ textarea {
       margin-bottom: 23px;
     }
 
-    .join-next-retreat p{
-      font-size: 1rem;
-    }
-
     .email-form{
       width: 38%;
       text-align: left;
@@ -559,7 +582,6 @@ textarea {
   /*HOME PAGE CAMP FEATURES TABLET STYLES*/
     
     .amenities-container h2{
-      font-size: 2.25rem;
       text-align: center;
       margin-bottom: 34px;
       margin-top: 94px;
@@ -589,7 +611,6 @@ textarea {
     .reviews-container h2{
       width: 65%;
       margin: 100px 0 22px 63px;
-      font-size: 2.25rem;
     }
     
     .reviews-container img{
@@ -612,7 +633,6 @@ textarea {
     }
 
     .past-team h3{
-      font-size: 1.5rem;
       margin-bottom: 17px;
       margin-top: 0;
     }
@@ -640,7 +660,6 @@ textarea {
     .contact h3,
     .social h3{
       margin-top: 0;
-      font-size: 1.5rem;
     }
 
     /*----------TABLET FAQ PAGE STYLES-------------*/
@@ -652,7 +671,6 @@ textarea {
    }
 
    .faq-content-container h2{
-    font-size: 2.25rem;
     text-align: left;
     margin: 95px 200px 35px 60px;
   }
@@ -660,10 +678,6 @@ textarea {
     .faq-content{
       width: 39%;
       margin: 0 0 0 60px;
-    }
-
-    .faq-content h4{
-      font-size: 0.875rem;
     }
 
     .faq-content p{
@@ -681,7 +695,6 @@ textarea {
     .mission-content-wrapper h2{
       width: 100%;
       margin-bottom: 35px;
-      font-size: 2.25rem;
       line-height: 3rem;
     }
 
@@ -701,7 +714,6 @@ textarea {
 
     .contact-wrapper h2{
       width:100%;
-      font-size: 2.25rem;
       line-height: 3rem;
       margin-bottom: 50px;
     }
@@ -714,7 +726,6 @@ textarea {
     }
 
     .contact-content h3{
-      font-size: 1.5rem;
       line-height: 1.5rem;
       margin-bottom: 20px;
     }
@@ -731,6 +742,21 @@ textarea {
     /*--------------DESKTOP HOME PAGE STYLES---------------*/
 
     @media only screen and (min-width: 1200px){
+
+      /*GENERAL STYLES*/
+
+      h2{
+        font-size: 3rem;
+      }
+
+      h3{
+        font-size: 1.875rem;
+      }
+
+      h4,
+      p{
+        font-size: 1.125rem;
+      }
 
     /*HOME PAGE CAMP FEATURES DESKTOP STYLES*/
     .amenities-container h2{
@@ -766,16 +792,10 @@ textarea {
 
     /*----------FAQ PAGE DESKTOP STYLES----------*/
     .faq-content-container h2{
-      font-size: 3rem;
       margin-bottom: 40px;
     }
 
-    .faq-content h4{
-      font-size: 1.125rem;
-    }
-
     .faq-content p{
-      font-size: 1.125rem;
       line-height: 1.125rem;
     }
 
@@ -786,13 +806,11 @@ textarea {
     }
     
     .mission-content-wrapper h2{
-      font-size: 3rem;
       line-height: 4.5rem;
       margin-bottom: 30px;
     }
 
     .mission-content-wrapper p{
-      font-size: 1.125rem;
       line-height: 1.5rem;
     }
 
@@ -802,19 +820,16 @@ textarea {
     }
     
     .contact-wrapper h2{
-      font-size: 3rem;
       line-height: 4.5rem;
       margin-bottom: 25px;
     }
 
     .contact-content h3{
-      font-size: 1.875rem;
       line-height: 1.875rem;
       margin-bottom: 35px;
     }
 
     .contact-content address{
-      font-size: 1.125rem;
       line-height: 1.35rem;
     }
 
