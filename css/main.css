@@ -406,6 +406,80 @@ textarea {
     line-height: 1.125rem;
   }
 
+  /*--------------ABOUT PAGE MOBILE STYLES--------------*/
+  /*MISSION SECTION*/
+  .mission-content-wrapper{
+        background: #527158;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column nowrap;
+        padding: 50px 20px;
+      }
+
+      .mission-content-wrapper h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.875rem;
+        font-weight: 500;
+        color: #e2e3ed;
+        margin-bottom: 20px;
+        line-height: 2.25rem;
+      }
+
+      .mission-content-wrapper p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.125rem;
+        color: #e2e3ed;
+      }
+
+      .paragraph-one{
+        margin-bottom: 20px;
+      }
+
+      /*CONTACT SECTION*/
+      .contact-wrapper{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: column nowrap;
+        background: #2a423a;
+        padding: 50px 20px;
+      }
+
+      .contact-wrapper h2{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        color: #e2e3ed;
+        font-weight: 500;
+        margin-bottom: 18px;
+      }
+
+      .contact-content{
+        width: 100%;
+      }
+
+      .contact-content h3{
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+        color: #ffffff;
+        font-weight: 500;
+        margin-bottom: 18px;
+      }
+
+      .contact-content address{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.35rem;
+        color: #ffffff;
+      }
+
+      .general-info address{
+        margin-bottom: 18px;
+      }
+
     /*--------------TABLET HOME PAGE STYLES----------------*/
     @media only screen and (min-width: 768px){
 
@@ -595,6 +669,63 @@ textarea {
     .faq-content p{
       margin-bottom: 35px;
     }
+
+    /*---------TABLET ABOUT PAGE STYLES-----------*/
+    /*MISSION SECTION*/
+    .mission-content-wrapper{
+      padding: 100px 60px;
+      flex-flow: row wrap;
+      align-items: flex-start;
+    }
+
+    .mission-content-wrapper h2{
+      width: 100%;
+      margin-bottom: 35px;
+      font-size: 2.25rem;
+      line-height: 3rem;
+    }
+
+    .mission-content-wrapper p{
+      flex: 1;
+    }
+
+    .paragraph-one{
+      margin: 0 35px 0 0;
+    }
+
+    /*CONTACT US SECTION*/
+    .contact-wrapper{
+      justify-content: flex-start;
+      padding: 95px 65px;
+    }
+
+    .contact-wrapper h2{
+      width:100%;
+      font-size: 2.25rem;
+      line-height: 3rem;
+      margin-bottom: 50px;
+    }
+
+    .contact-content{
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-flow: row nowrap;
+    }
+
+    .contact-content h3{
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-content address{
+      line-height: 1.125rem;
+    }
+
+    .general-info{
+      margin-right: 100px;
+    }   
   }  
 
     /*--------------DESKTOP HOME PAGE STYLES---------------*/
@@ -647,7 +778,50 @@ textarea {
       font-size: 1.125rem;
       line-height: 1.125rem;
     }
+
+    /*-----------ABOUT PAGE DESKTOP STYLES----------------*/
+    /*MISSION SECTION*/
+    .mission-content-wrapper{
+      padding: 90px 120px;
     }
+    
+    .mission-content-wrapper h2{
+      font-size: 3rem;
+      line-height: 4.5rem;
+      margin-bottom: 30px;
+    }
+
+    .mission-content-wrapper p{
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+
+    /*CONTACT SECTION*/
+    .contact-wrapper{
+      padding: 90px 120px;
+    }
+    
+    .contact-wrapper h2{
+      font-size: 3rem;
+      line-height: 4.5rem;
+      margin-bottom: 25px;
+    }
+
+    .contact-content h3{
+      font-size: 1.875rem;
+      line-height: 1.875rem;
+      margin-bottom: 35px;
+    }
+
+    .contact-content address{
+      font-size: 1.125rem;
+      line-height: 1.35rem;
+    }
+
+    .general-info{
+      margin-right: 200px;
+    }
+  }
 
 
 
