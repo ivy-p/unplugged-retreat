@@ -135,7 +135,7 @@ textarea {
 
    /*-------------------MOBILE HOME PAGE STYLES----------------*/
 
-  /*  HEADER STYLES */
+  /*  HEADER & FOOTER STYLES */
   .header-container{
     display:flex;
     justify-content: center;
@@ -178,6 +178,58 @@ textarea {
 
   }
 
+  .footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    background: #202322;
+  }
+
+  .contact h3,
+  .social h3{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+
+  .contact address{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.875rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 20px 0 0px 0;
+  }
+
+    .social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+    }
+
+    .social h3{
+      margin-bottom: 21px;
+    }
+
+    .social-icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row nowrap;
+      margin-bottom: 50px;
+    }
+
+    .social-icons a{
+      margin: 0 20px;
+    }
+
+    footer p{
+      color: #ffffff;
+      margin-bottom: 20px;
+    }
+
   /*HERO IMAGE SECTION*/
   .hero-container{
     display: flex;
@@ -200,54 +252,57 @@ textarea {
   .more-info-container{
     display: flex;
     justify-content:flex-start;
+    align-items: center;
     flex-flow: column nowrap;
     background: #527158;
-    height: 330px;
   }
 
   .more-info-container h3{
-    width: 74%;
-    margin: 30px 0 13px 20px;
+    margin-bottom: 13px;
     font-weight: 500;
     color: #e2e3ed;
   }
 
   .more-info-container p{
-    margin-left: 20px;
     color: #e2e3ed;
   }
 
-  .email-form{
+  /*ASIDE*/
+
+    aside{
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-  }
+    justify-content:center;
+    flex-flow: row wrap;
+    background: #527158;
+    align-items:center;
+    padding: 25px 20px 50px 20px;
+    }
 
-  .email-form input{
-    width: 89%;
-    margin: 0 0 17px 20px;
-    height: 50px;
-    box-sizing: border-box;
-  }
-
-  .email{
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    font-size: 0.875rem;
-    color: #9d9ea4;
-    border: none;
-    padding-left: 15px;
-  }
-
-  .download{
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 1.125rem;
-    color: #9d9ea4;
-    background: #2a423a;
-    border: none;
-  }
+    aside .email-form {
+      margin-top: 30px;
+    }
+     
+    input[type=text] {
+      box-sizing: border-box;
+      width: 100%;
+      color: #2a423a;
+      font-style: italic;
+      padding: 1em;
+    }
+     
+    input[type=button] {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: 20px;
+      background-color: #2a423a;
+      font-family: 'Poppins', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 1.125em;
+      color: #e2e3ed;
+      border: none;
+      text-align: center;
+      text-transform: uppercase;
+    }
 
   /*FUN CAMP FEATURES*/
   .amenities-container{
@@ -325,60 +380,8 @@ textarea {
     color: #e2e3ed;
     width: 89%;
     margin: 0 20px 50px 20px;
-  }
+  }  
 
-  /*FOOTER STYLES*/
-  .footer-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column nowrap;
-    background: #202322;
-  }
-
-  .contact h3,
-  .social h3{
-    text-align: center;
-    color: #ffffff;
-    font-weight: 500;
-    margin-top: 50px;
-  }
-
-  .contact address{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.875rem;
-    color: #ffffff;
-    text-align: center;
-    margin: 20px 0 0px 0;
-  }
-
-    .social{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: column nowrap;
-    }
-
-    .social h3{
-      margin-bottom: 21px;
-    }
-
-    .social-icons{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: row nowrap;
-      margin-bottom: 50px;
-    }
-
-    .social-icons a{
-      margin: 0 20px;
-    }
-
-    footer p{
-      color: #ffffff;
-      margin-bottom: 20px;
-    }
 
     /*-----------FAQ PAGE MOBILE STYLES-----------------*/
 
@@ -552,31 +555,17 @@ textarea {
 
     /*HOMEPAGE MORE INFO TABLET STYLES*/
 
-    .more-info-container{
+    aside .more-info-container{
+      margin: 50px 0;
+      display: flex;
+      justify-content: space-between;
       flex-flow: row wrap;
-      justify-content: space-around;
-      align-items:center;
-      height: 236px;
     }
 
-    .join-next-retreat{
-      width: 33%;
-      text-align: left;
-    }
-
-    .join-next-retreat h3{
-      margin-top:0;
-      margin-bottom: 23px;
-    }
-
+    .join-next-retreat,
     .email-form{
-      width: 38%;
-      text-align: left;
-    }
-
-    .email-form .email{
-      margin-bottom: 20px;
-      padding-left: 15px;
+      width: 40%;
+      margin: 0;
     }
 
   /*HOME PAGE CAMP FEATURES TABLET STYLES*/
@@ -757,6 +746,16 @@ textarea {
       p{
         font-size: 1.125rem;
       }
+
+    /*ASIDE*/
+    aside .more-info-container{
+      justify-content: space-around;
+    }  
+
+    .join-next-retreat,
+    .email-form{
+      width: 30%;
+    }
 
     /*HOME PAGE CAMP FEATURES DESKTOP STYLES*/
     .amenities-container h2{
