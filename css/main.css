@@ -351,8 +351,8 @@ textarea {
 
   }
 
-  .fun-feature figure{
-    width: 40%;
+  .fun-feature i{
+    font-size: 3.75rem;
   }
 
   .fun-details{
