@@ -156,6 +156,12 @@ textarea {
   }
   /*unplugged.logo class applies to FAQ and ABOUT pages*/
 
+  .header-container figure:hover,
+  .unplugged-logo:hover{
+    cursor: pointer;
+
+  }
+
   .header-divider{
     width: 100%;
     border-top: #3a3a3a solid 1px;
@@ -181,7 +187,6 @@ textarea {
     font-weight: bold;
     font-size: 1.125rem;
     text-transform: uppercase;
-
   }
 
   .footer-container{
@@ -234,6 +239,10 @@ textarea {
       text-align: center;
       line-height: 40px;
       vertical-align: middle;
+    }
+
+    .social-icons i:hover{
+      background-color: #2a423a;
     }
 
     footer .copyright{
@@ -304,6 +313,10 @@ textarea {
       font-style: italic;
       padding: 1em;
     }
+
+    input[type=text]:hover{
+      cursor: text;
+    }
      
     input[type=button] {
       width: 100%;
@@ -317,6 +330,11 @@ textarea {
       border: none;
       text-align: center;
       text-transform: uppercase;
+    }
+
+    input[type=button]:hover{
+      cursor: pointer;
+      background: #202322;
     }
 
   /*FUN CAMP FEATURES*/
