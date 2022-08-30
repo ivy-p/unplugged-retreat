@@ -227,6 +227,13 @@ textarea {
     .social-icons i{
       margin: 0 20px;
       font-size: 1.125rem;
+      background: #527158;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      vertical-align: middle;
     }
 
     footer .copyright{
