@@ -106,14 +106,13 @@ textarea {
     font-size: 1rem;
   }
 
-  ul,
-  ol{
-
-  }
-
   a{
     color: #e2e3ed;
     text-decoration: none;
+  }
+
+  img{
+    width: 100%;
   }
 
   h1{
@@ -146,11 +145,16 @@ textarea {
     background: #202322;
   }
 
-  .header-container img,
-  .unplugged-logo a img{
+  .header-container figure,
+  .unplugged-logo{
     width: 60%;
     margin: 25px 0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-flow: row wrap;
   }
+  /*unplugged.logo class applies to FAQ and ABOUT pages*/
 
   .header-divider{
     width: 100%;
@@ -223,7 +227,7 @@ textarea {
       margin-bottom: 50px;
     }
 
-    .social-icons a{
+    .social-icons figure{
       margin: 0 20px;
     }
 
@@ -231,13 +235,6 @@ textarea {
       color: #ffffff;
       margin-bottom: 20px;
     }
-
-  /*FAQ & ABOUT PAGE HEADER SETTINGS*/
-  .unplugged-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   /*===========================================================================================
   -------------------MOBILE HOME PAGE STYLES----------------
@@ -347,6 +344,15 @@ textarea {
     margin: 66px 97px;
     font-family: 'Open Sans', sans-serif;
     font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+  }
+
+  .fun-feature figure{
+    width: 40%;
   }
 
   .fun-details{
@@ -370,7 +376,7 @@ textarea {
     color: #e2e3ed;
   }
 
-  .reviews-container img{
+  .reviews-container figure{
     width: 89%;
     margin: 32px 20px;
   }
@@ -536,14 +542,13 @@ textarea {
 
       /*ABOUT & FAQ PAGE HEADER TABLET STYLES*/
 
-      .unplugged-logo{
+      .header-container figure{
         justify-content: flex-start;
-      }
-
-      .header-container img{
         width: 31%;
         margin-left: 64px;
       }
+
+      
 
       .header-divider{
         display: none;
@@ -616,11 +621,11 @@ textarea {
       margin: 100px 0 22px 63px;
     }
     
-    .reviews-container img{
+    .reviews-container figure{
       margin: 0 0 0 63px;
     }
 
-    .reviews-container img,
+    .reviews-container figure,
     .past-team{
       width: 41%;
       margin-bottom: 100px;
@@ -800,7 +805,7 @@ textarea {
         margin: 95px 0 95px 120px;
       }
 
-      .reviews-container img{
+      .reviews-container figure{
         margin: 0 0 95px 120px;
         width: 38%;
       }
