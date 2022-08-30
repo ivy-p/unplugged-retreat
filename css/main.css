@@ -87,7 +87,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-   /*-----------GENERAL STYLES--------------*/
+
+   /*==========================================================================
+   -----------GENERAL STYLES--------------
+   ==========================================================================*/
    
    *{
     margin: 0;
@@ -133,7 +136,6 @@ textarea {
     font-size: 0.875rem;
   }
 
-   /*-------------------MOBILE HOME PAGE STYLES----------------*/
 
   /*  HEADER & FOOTER STYLES */
   .header-container{
@@ -230,13 +232,24 @@ textarea {
       margin-bottom: 20px;
     }
 
+  /*FAQ & ABOUT PAGE HEADER SETTINGS*/
+  .unplugged-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*===========================================================================================
+  -------------------MOBILE HOME PAGE STYLES----------------
+  ============================================================================================*/
+
   /*HERO IMAGE SECTION*/
   .hero-container{
     display: flex;
     justify-content: start;
     align-items: start;
-    background-image: url('../img/jake-melara-30679-unsplash.jpg');
-    background-position:top;
+    flex-flow: row wrap;
+    background: url('../img/jake-melara-30679-unsplash.jpg') center no-repeat #333;
     background-size: cover;
     height: 500px;
   }
@@ -383,16 +396,11 @@ textarea {
   }  
 
 
-    /*-----------FAQ PAGE MOBILE STYLES-----------------*/
+  /*===================================================================================
+  -----------FAQ PAGE MOBILE STYLES-----------------
+  ========================================================================================*/
 
-     /*FAQ & ABOUT PAGE HEADER SETTINGS*/
-  .unplugged-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /*FAQ SECTION STYLES*/
+  /*FAQ SECTION*/
   .faq-content-container{
     display: flex;
     align-items: center;
@@ -424,7 +432,10 @@ textarea {
     line-height: 1.125rem;
   }
 
-  /*--------------ABOUT PAGE MOBILE STYLES--------------*/
+  /*==========================================================================
+  --------------ABOUT PAGE MOBILE STYLES--------------
+  ==========================================================================*/
+
   /*MISSION SECTION*/
   .mission-content-wrapper{
         background: #527158;
@@ -490,7 +501,10 @@ textarea {
         margin-bottom: 18px;
       }
 
-    /*--------------TABLET HOME PAGE STYLES----------------*/
+
+    /*=============================================================================
+    --------------TABLET HOME PAGE STYLES----------------
+    ==================================================================================*/
     @media only screen and (min-width: 768px){
 
       /*GENERAL STYLES*/
@@ -651,7 +665,9 @@ textarea {
       margin-top: 0;
     }
 
-    /*----------TABLET FAQ PAGE STYLES-------------*/
+    /*==========================================================================
+    ----------TABLET FAQ PAGE STYLES-------------
+    ==========================================================================*/
 
     .faq-content-container{
       flex-flow: row wrap;
@@ -673,7 +689,10 @@ textarea {
       margin-bottom: 35px;
     }
 
-    /*---------TABLET ABOUT PAGE STYLES-----------*/
+    /*==========================================================================
+    ---------TABLET ABOUT PAGE STYLES-----------
+    ==========================================================================*/
+
     /*MISSION SECTION*/
     .mission-content-wrapper{
       padding: 100px 60px;
@@ -728,7 +747,9 @@ textarea {
     }   
   }  
 
-    /*--------------DESKTOP HOME PAGE STYLES---------------*/
+    /*==========================================================================
+    --------------DESKTOP HOME PAGE STYLES---------------
+    ==========================================================================*/
 
     @media only screen and (min-width: 1200px){
 
@@ -789,7 +810,10 @@ textarea {
         width: 38%;
       }
 
-    /*----------FAQ PAGE DESKTOP STYLES----------*/
+    /*==========================================================================
+    ----------FAQ PAGE DESKTOP STYLES----------
+    ==========================================================================*/
+
     .faq-content-container h2{
       margin-bottom: 40px;
     }
@@ -798,7 +822,10 @@ textarea {
       line-height: 1.125rem;
     }
 
-    /*-----------ABOUT PAGE DESKTOP STYLES----------------*/
+    /*==========================================================================
+    -----------ABOUT PAGE DESKTOP STYLES----------------
+    ==========================================================================*/
+
     /*MISSION SECTION*/
     .mission-content-wrapper{
       padding: 90px 120px;
